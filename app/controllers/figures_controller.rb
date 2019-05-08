@@ -7,7 +7,8 @@ class FiguresController < ApplicationController
   end
   
   post '/figures' do
-    raise params.inspect
+    @figure = Figure.create(params[:figure])
+    binding.pry 
   end
   
 end
