@@ -7,7 +7,6 @@ class FiguresController < ApplicationController
   end
   
   post '/figures' do
-    binding.pry
     @figure = Figure.create(params[:figure])
     if params[:new_title].present?
       title = Title.create(params[:new_title])
@@ -18,7 +17,6 @@ class FiguresController < ApplicationController
       @figure.landmarks << landmark
     end
     @figure.save
-    
     
   end
   
