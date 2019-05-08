@@ -6,4 +6,8 @@ class FiguresController < ApplicationController
     erb :'figures/new'
   end
   
+  post '/figures' do
+    raise params.inspect
+  end
+  
 end
