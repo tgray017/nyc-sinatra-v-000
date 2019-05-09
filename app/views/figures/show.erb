@@ -13,3 +13,7 @@
     <li><%=l.name%></li>
   <%end%>
 </ul>
+
+<form action='/figures/<%=@figure.id%>/edit' method='get'>
+  <input type="submit" value='Edit this figure'>
+</form>
