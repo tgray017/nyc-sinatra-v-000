@@ -8,7 +8,7 @@
   <%end%>
   
   <p><b>Create New Title:</b></p>
-  <p><input type='text' name='new_title[name]'></p>
+  <p><input type='text' name='new_title[name]' id='new_title'></p>
   
   <p><b>Landmarks</b></p>
   <%@landmarks.each do |l|%>
@@ -16,7 +16,7 @@
   <%end%>
   
   <p><b>Create New Landmark:</b></p>
-  <label for='new_landmark[name]'>Name: </label><input type='text' name='new_landmark[name]'>
+  <label for='new_landmark[name]'>Name: </label><input type='text' name='new_landmark[name]' id='new_landmark'>
   <label for='new_landmark[year]'>Year: </label><input type='integer' name='new_landmark[year_completed]'>
   <input type='submit' value='Create New Figure'>
 </form>
